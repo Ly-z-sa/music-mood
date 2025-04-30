@@ -1,0 +1,95 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #222;
+  --card-color: #ffffff;
+  --accent-color: #4b6cb7;
+  --button-bg: #4b6cb7;
+  --button-text: #ffffff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-color: #1e1e1e;
+  --accent-color: #7f53ac;
+  --button-bg: #7f53ac;
+  --button-text: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: var(--card-color);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#mood {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  margin-right: 10px;
+  background-color: var(--card-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.entry {
+  margin-top: 2rem;
+}
+
+.entry iframe {
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.calendar {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.calendar div {
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
