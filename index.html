@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musical Mood Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎵 Musical Mood Journal</h1>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </header>
+    <div class="mood-selector">
+      <label for="mood">How do you feel today?</label>
+      <select id="mood">
+        <option value="happy">😊 Happy</option>
+        <option value="sad">😢 Sad</option>
+        <option value="angry">😠 Angry</option>
+        <option value="chill">😌 Chill</option>
+        <option value="anxious">😰 Anxious</option>
+        <option value="romantic">🥰 Romantic</option>
+      </select>
+      <button id="generate">Generate Soundtrack</button>
+    </div>
+    <div class="entry" id="entry"></div>
+    <div class="calendar" id="calendar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
